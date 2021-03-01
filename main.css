@@ -5,18 +5,21 @@ body{
 }
 
 .header{
-    background:white;
-    border-bottom : 1px solid lightgray;
+    background:rgb(223, 171, 171);
+    border-bottom : 10px solid rgb(185, 98, 98);
 }
 
-.container{
-    width: 980px;
+.inner{
+    width: 80%;
     margin: auto;
+    display:flex;
 
 }
 
 /* padding 은 적용되는 최하위 요소에 넣는게 좋다. */
-.container-left{
+.menu-group{
+    width:60%;
+    float: left;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -31,8 +34,13 @@ body{
     display: block;
 }
 
-.menu{
 
+ul{
+    list-style-type: none;
+}
+
+.main-menu{
+    
 }
 
 /*float : 특정 요소들을 수평으로 배치시켜줌 */
@@ -42,8 +50,37 @@ body{
     padding: 8px 10px;  /*위아래 8 좌우 10*/
 }
 
+.sign-group{
+    width : 50%;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-menu{
+}
+
+.info-item{
+    float: left;
+    padding: 8px 10px;
+}
+
+.search-form{
+    float:left;
+    padding: 8px 10px;
+}
+
+.btn-group{
+    
+}
+
+.btn{
+    float:left;
+    padding : 8px 10px;
+}
+
+
 .clearfix::after{
     content: "";
-    display: block;
     clear: both;
 }
