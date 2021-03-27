@@ -1,0 +1,86 @@
+/* 초기화 안하면 웹 마다 기본  margin padding 이 존재. 추후에는 reset.css 파일 따로 만듦.*/
+body{
+    margin: 0;
+    padding : 0;
+}
+
+.header{
+    background:rgb(223, 171, 171);
+    border-bottom : 10px solid rgb(185, 98, 98);
+}
+
+.inner{
+    width : 100vw;
+    margin: auto;
+    display:flex;
+    
+}
+
+/* padding 은 적용되는 최하위 요소에 넣는게 좋다. */
+.menu-group{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.logo{
+    float:left;
+    margin-right:10px;
+}
+/* html 구조와 비슷하게 작성해야 유지보수가 편함 */
+/* 띄어쓰기는 그 안에 있는 하위 요소 찾는데 씀.*/
+.logo img{
+    display: block;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.main-menu{
+    
+}
+
+/*float : 특정 요소들을 수평으로 배치시켜줌 */
+.menu-item{
+    float: left;
+    /* margin-right: 10px; */
+    padding: 8px 10px;  /*위아래 8 좌우 10*/
+}
+
+.sign-group{
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-menu{
+    float: right;
+}
+
+.info-item{
+    float: right;
+    padding: 8px 10px;
+}
+
+.search-form{
+    float: right;
+    padding: 8px 10px;
+}
+
+.btn-group{
+    float: right;
+}
+
+.btn{
+    float: right;
+    padding : 8px 10px;
+}
+
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display : block;
+}
